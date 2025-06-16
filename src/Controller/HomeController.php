@@ -15,4 +15,32 @@ final class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
+
+#[Route('/apropos', name: 'apropos')]
+    public function apropos(): Response
+    {
+        return $this->render('a_propos/index.html.twig', [
+            
+        ]);
+    }
+
+    #[Route('/inscription', name: 'inscription')]
+    public function inscription(): Response
+    {
+        return $this->render('registration/register.html.twig', [
+            
+        ]);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
